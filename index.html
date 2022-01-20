@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXRMF1DM3K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-SXRMF1DM3K');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liliya Vakula - Interactive Frontend Developer</title>
+  <link rel="icon" href="img/v.png" type="image/x-icon">
+  <!-- Custom fonts for this template-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Literata:wght@400&display=swap" rel="stylesheet">
+  <!-- Normalize -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- Bootstrap Grid CSS -->
+  <link href="vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+</head>
+<body>
+
+  <noscript><div><img src="https://mc.yandex.ru/watch/67657545" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    
+  </div>
+
+  
+  <header class="header">
+    <div class="container-fluid container-lg">
+      <nav class="header__nav d-flex align-items-center justify-content-between">
+        <div class="header__logo">
+          <a href="index.html">
+            <span class="logo-letter">V</span>
+            <!-- <img class="logo-gif" src="img/logo3.gif"> -->
+          </a>
+        </div>
+        <!-- /.header__logo -->
+        <ul class="header__list d-flex">
+          <li class="header__list-item mr-3 mr-md-5 d-none d-sm-block">
+            <a href="#main">Сайты</a>
+          </li>
+          <li class="header__list-item mr-3 mr-md-5 d-none d-sm-block">
+            <a href="#exp">Эксперименты</a>
+          </li>
+          <li class="header__list-item contact__btn mr-3 mr-md-5 d-none d-sm-block">
+            <a href="#">Контакты</a>
+          </li>
+
+          <li class="lang__btn lang-en-js header__list-item lang__btn mr-2 d-none d-sm-flex">
+            <a href="#">EN</a>
+          </li>
+          <li class="lang__btn lang-ru-js header__list-item lang__btn d-none d-sm-flex">
+            <a href="#">РУ</a>
+          </li>
+
+          <div class="header__burger d-sm-none d-block">
+            <span></span>
+          </div>
+        </ul>
+        <!-- /.header__links -->
+      </nav>
+      <!-- /.header__nav -->
+    </div>
+    <!-- /.container -->
+
+    <div class="mobile-menu hide">
+      <div class="header__close header__close--menu header__close--menu-active">
+        <span class="header__close-bar left"></span>
+        <span class="header__close-bar right"></span>
+      </div>
+
+      <nav class="header__mobile-nav d-flex flex-column">
+        <a href="#" class="header__mobile-nav__item">Главная</a>
+        <a href="#" class="header__mobile-nav__item">Сайты</a>
+        <a href="#" class="header__mobile-nav__item">Эксперименты</a>
+        <a href="#" class="header__mobile-nav__item contact__btn--menu">Контакты</a>
+      </nav>
+
+      <nav class="header__mobile-social-nav d-flex">
+        <div class="header__mobile-social-nav__item">
+          <svg fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+          </svg>
+        </div>
+        <div class="header__mobile-social-nav__item">
+          <svg fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z" />
+          </svg>
+        </div>
+        <div class="header__mobile-social-nav__item">
+          <svg fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </div>
+        <div class="header__mobile-social-nav__item">
+          <svg fill="#fff" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="m255.807 87.087c-.059-.31-.11-.62-.193-.924-.052-.183-.114-.355-.172-.535a11.007 11.007 0 0 0 -.283-.8c-.076-.182-.162-.358-.245-.534a9.74 9.74 0 0 0 -.376-.73c-.096-.176-.207-.342-.313-.51a11.038 11.038 0 0 0 -.842-1.142 11.166 11.166 0 0 0 -.544-.596c-.145-.145-.29-.29-.442-.431a9.07 9.07 0 0 0 -.624-.52c-.165-.128-.327-.26-.5-.377-.061-.044-.117-.096-.182-.138l-116.992-78a10.989 10.989 0 0 0 -12.201 0l-117 77.998c-.065.041-.116.093-.182.138-.172.12-.334.248-.5.376a15.52 15.52 0 0 0 -.624.517 8.604 8.604 0 0 0 -.438.43c-.193.194-.372.39-.548.597-.13.155-.255.31-.376.483-.165.217-.317.438-.465.669-.107.169-.214.334-.314.51a9.593 9.593 0 0 0 -.372.724c-.083.176-.172.355-.245.534-.107.262-.2.531-.286.8-.058.18-.12.355-.169.517-.08.303-.138.61-.193.924-.03.159-.069.314-.09.476-.062.475-.096.951-.096 1.437v78.016c0 .482.034.965.103 1.437.025.173.07.31.104.476.055.31.103.62.207.931.048.172.103.345.172.534.086.276.172.552.276.804.072.172.172.344.241.517.114.241.242.482.38.734.096.172.206.345.31.503.148.242.31.449.482.655.121.173.242.31.38.476.175.207.344.414.551.597.141.137.276.31.448.413.2.173.414.345.62.524.166.138.346.242.483.376.066.034.104.103.173.134l116.968 78.04a10.815 10.815 0 0 0 6.102 1.851 11.06 11.06 0 0 0 6.102-1.85l117-78c.065-.04.12-.089.182-.134.172-.12.334-.248.5-.375.214-.17.424-.345.624-.524.151-.135.296-.283.441-.428a9.876 9.876 0 0 0 .92-1.072c.166-.217.318-.441.466-.669.107-.165.214-.334.314-.503.138-.242.258-.486.375-.734.083-.176.17-.352.245-.531.107-.266.197-.535.283-.804.058-.179.12-.355.172-.534.08-.303.135-.614.193-.924.028-.159.07-.314.086-.476.063-.475.097-.951.097-1.437v-78.003c0-.486-.038-.962-.097-1.438-.027-.169-.079-.306-.113-.475zm-127.81 66.935-38.905-26.021 38.905-26.025 38.907 26.025zm-10.998-71.155-47.692 31.9-38.497-25.754 86.19-57.458v51.312zm-67.477 45.13-27.517 18.406v-36.811zm19.785 13.245 47.693 31.896v51.312l-86.19-57.465 38.498-25.75v.007zm69.69 31.89 47.692-31.896 38.501 25.749-86.193 57.458v-51.312zm67.477-45.128 27.521-18.409v36.815l-27.52-18.413v.007zm-19.785-13.238-47.692-31.896v-51.315l86.193 57.459-38.5 25.752z" />
+          </svg>
+        </div>
+      </nav>
+
+      <div class="header__mobile-lang d-flex">
+        <div class="mr-3 lang-en-js lang__btn">
+          <a class="">EN</a>
+        </div>
+        <div class="lang-ru-js lang__btn">
+          <a class="">РУ</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="header__content">
+      <div class="header__content-wrap">
+
+        <div class="header__content-title">
+          Лилия Вакула
+        </div>
+
+        <div class="header__content-subtitle">
+          <i>Interactive Front-end Developer</i>
+        </div>
+
+        <button class="header__btn button button--about">
+          <span class="button__text">
+            Обо Мне
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+            <path fill="#FFF"
+              d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+            </path>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+    <!-- /.header__content -->
+
+    <!-- contact modal -->
+    <div class="contact__modal hide">
+      <div class="contact__modal-block-wrap">
+        <div class="contact__modal-block right" style="background-color: rgba(28,29,37,.985);">
+          <div class="contact__modal__big-text right">Contact</div>
+          <div class="contact__modal__content right">
+            <div class="contact__modal__title">Let’s talk.</div>
+            <!-- <div class="contact__modal__subtitle" style="font-size: 0.95em;">Новые идеи, проекты на фриланс или даже кофе.</div> -->
+            <div class="contact__modal__subtitle right" style="font-size: 0.95em;">Давайте вместе создадим крутой проект</div>
+            <div class="contact__modal__form-wrap">
+              <!-- <form action="mail.php" method="post" enctype="multipart/form-data" onsubmit="send(event, 'mail.php')"> -->
+                <form action="send.php" method="post" enctype="multipart/form-data"">
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="form__name">Имя *</label>
+                  <input id="form__name" name="name" type="text" required autocomplete="off" />
+                </div>
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="form__mail">E-mail *</label>
+                  <input id="form__mail" name="mail" type="text" required autocomplete="off" />
+                </div>
+                <div class="form__item d-flex flex-column mb-4">
+                  <label for="message" class="mb-2">Сообщение *</label>
+                  <textarea name="message"></textarea>
+                </div>
+                <input type="submit" value="Отправить" class="contact__btn-js button button__text" style="width: 145px; text-align: center;">
+              </form>
+            </div>
+          </div>
+          <div class="header__close header__close--contact">
+            <span class="header__close-bar left"></span>
+            <span class="header__close-bar right"></span>
+          </div>
+        </div>
+        <div class="contact__modal-block left" style="background-color: rgba(242, 242, 242, 0.97);">
+          <div class="contact__modal__big-text left">About</div>
+          <div class="contact__modal__content" style="color: #000;">
+            <div class="contact__modal__title left" style="color: #1c1d25;">Обо Мне.
+            </div>
+            <div class="contact__modal__subtitle">Interactive Front-end developer.</div>
+            <div class="contact__modal__text">
+              <!-- I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies.
+              I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
+              When not working or futzing around with code, I study how to escape from University. Actually for hire. -->
+              Привет! Меня зовут Лилия! Я<span>фрилансер Front-end developer.</span> Мне нравится воплощать идеи в жизнь в браузере,
+              решать проблемы дизайна, создавать умный пользовательский интерфейс и делать его удобным, разрабатывая UI&UX для веб-приложений. Постоянно работаю над улучшением своих навыков и мне нравится то, что я делаю!
+            </div>
+
+            <div class="contact__modal__svg-wrap d-flex justify-content-around">
+              <div class="contact__modal__svg-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 128 128" class="tech-svg react-svg">
+                  <path
+                    d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3-12.5 4.8-19.3 11.4-19.3 18.8s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zm-14.8-30.5c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zm-11.2 59.3c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zm-25.6 27.1c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zm25.6-27.1c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-54.5-16.2c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zm-24.7 29c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5-13.8-4-22.1-10-22.1-15.6zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zm60.8-20.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z">
+                  </path>
+                </svg>
+                <div class="contact__modal__svg-label">REACT.JS</div>
+              </div>
+
+              <div class="contact__modal__svg-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 128 128" class="tech-svg uiux-svg">
+                  <path
+                    d="M74.6 96.7c1 0 1.9-.8 1.9-1.9s-.9-1.8-1.9-1.8H50.4c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9h24.2zM83.9 100.4H41.1c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9H84c1 0 1.9-.8 1.9-1.9s-.9-1.9-2-1.9zM20.6 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7 3.7 1.7 3.7 3.7-1.7 3.7-3.7 3.7zM37.3 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S39.4 24 37.3 24zM54.1 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S56.2 24 54.1 24z">
+                  </path>
+                  <path d="M7.5 7.2V119h111.8V7.2H7.5zm3.7 3.8h104.4v18.6H11.2V11zm104.4 104.3H11.2v-82h104.4v82z">
+                  </path>
+                  <path
+                    d="M47.5 81.4l1.7 1.4c.1 0 .1.1.2.1.4.3.7.5 1.1.7.2.1.5.3.7.4.4.2.7.4 1.1.6.3.2.6.3.9.5.3.1.6.3.9.4.6.3 1.3.5 1.9.7.2.1.5.1.7.2.5.1 1 .3 1.5.4.3.1.5.1.8.2.5.1 1 .2 1.5.2.2 0 .5.1.7.1.7.1 1.5.1 2.2.1s1.5 0 2.2-.1c.2 0 .5-.1.7-.1.5-.1 1-.1 1.5-.2.3 0 .5-.1.8-.1.5-.1 1-.2 1.5-.4.2-.1.4-.1.7-.2.6-.2 1.3-.4 1.9-.7.3-.1.6-.3.9-.4.3-.2.7-.3 1-.5.4-.2.7-.4 1-.6.2-.1.5-.3.7-.4.4-.2.7-.5 1.1-.7.1 0 .1-.1.2-.1l1.9-1.4-.1-.1c5.1-4.4 8.3-10.9 8.3-18.2C87.7 49.8 76.8 39 63.5 39S39.2 49.8 39.2 63.1c0 7.3 3.2 13.8 8.3 18.3zM58.4 83c-.7-.2-1.5-.4-2.2-.7-.1 0-.2-.1-.2-.1-.7-.3-1.5-.6-2.2-1l4.5-2.5c1.4-.8 2.3-2.2 2.3-3.8v-3.1l-.4-.5s-1.5-1.8-2.1-4.3l-.2-.9-.6-.4.1-2.8.6-.6v-4.9c0-.1-.1-1.4.8-2.5.9-1 2.5-1.5 4.8-1.5s3.9.5 4.8 1.5c1 1.1.8 2.4.8 2.5v4.1l.1.9.6.6v2.7c0 .1-.1.1-.1.1l-.9.3-.3.9c-.4 1.3-1 2.5-1.8 3.5-.2.2-.3.5-.5.6l-.5.5V75c0 1.6.9 3.1 2.4 3.9l4.8 2.4h-.1c-.7.3-1.3.6-2 .9-.1 0-.2.1-.3.1-.7.3-1.4.5-2.2.7-3.4.8-6.7.8-10 0 .1 0 0 0 0 0zm5-40.4c11.3 0 20.5 9.2 20.5 20.5 0 6.4-2.9 12.1-7.5 15.8-.1-.1-.2-.1-.3-.2l-6.5-3.2c-.2-.1-.3-.3-.3-.5v-1.9c.1-.1.2-.2.3-.4.8-1.1 1.5-2.4 2-3.8 1.1-.7 1.8-1.9 1.8-3.3v-2.7c0-.8-.2-1.5-.7-2.2v-3.1c.1-.7.1-3.1-1.7-5.2-1.6-1.8-4.2-2.8-7.6-2.8s-6 .9-7.6 2.8C54 54.5 54 57 54.1 57.6v3.1c-.4.6-.7 1.4-.7 2.2v2.7c0 1 .4 2 1.1 2.7.6 2.1 1.6 3.8 2.2 4.6V75c0 .2-.1.4-.3.5l-6 3.3c-.1 0-.1.1-.2.1-4.5-3.8-7.4-9.4-7.4-15.8.1-11.3 9.3-20.5 20.6-20.5z">
+                  </path>
+                </svg>
+                <div class="contact__modal__svg-label">UI/UX</div>
+              </div>
+
+              <div class="contact__modal__svg-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="tech-svg web-svg">
+                  <path
+                    d="M16.017 21.044zM4.743 3.519L6.792 26.5l9.194 2.552 9.22-2.556 2.051-22.977H4.743zM23 8.775l-.693 7.767-.48 5.359-.042.476-5.781 1.603-5.773-1.603-.395-4.426h2.829l.201 2.248 3.142.847.008-.002h.002l3.134-.846.329-3.655h-6.579l-.056-.633-.129-1.429-.067-.756h7.081l.258-2.886H9.203l-.056-.634-.129-1.429-.067-.756h14.118l-.068.756z">
+                  </path>
+                </svg>
+                <div class="contact__modal__svg-label">Is Fun.</div>
+              </div>
+
+              <div class="contact__modal__svg-item">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="tech-svg js-svg">
+                  <path
+                    d="M.384.67v31.296H31.68V.67H.384zm16.334 26.772c-.461.937-1.342 1.553-2.362 1.85-1.568.36-3.067.155-4.183-.515-.747-.458-1.33-1.163-1.725-1.975.794-.485 1.586-.973 2.38-1.458.021.009.083.122.167.268.303.509.565.869 1.08 1.121.506.172 1.615.283 2.044-.607.262-.452.178-1.936.178-3.545 0-2.529.012-5.016.012-7.576h2.927c0 2.688.015 5.383 0 8.067.006 1.645.149 3.14-.518 4.369zm12.144-.827c-1.017 3.481-6.691 3.594-8.957 1.294-.479-.541-.779-.824-1.065-1.449 1.205-.693 1.205-.693 2.377-1.371.637.979 1.226 1.517 2.285 1.737 1.437.175 2.883-.318 2.559-1.844-.333-1.247-2.942-1.55-4.718-2.883-1.803-1.211-2.225-4.153-.744-5.834.494-.622 1.336-1.086 2.219-1.309l.922-.119c1.77-.036 2.877.431 3.689 1.339.226.229.41.476.756 1.012-.943.601-.94.595-2.291 1.47-.289-.622-.767-1.012-1.273-1.181-.785-.238-1.776.021-1.981.851-.071.256-.056.494.057.916.318.726 1.386 1.041 2.344 1.481 2.758 1.119 3.689 2.317 3.918 3.745.22 1.229-.054 2.026-.095 2.145z">
+                  </path>
+                </svg>
+                <div class="contact__modal__svg-label">Semicolons.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.contact__modal -->
+
+    <!-- PARALLAX -->
+    <!-- line -->
+    <svg id="line" xmlns="http://www.w3.org/2000/svg" width="26" viewbox="0 0 26 23">
+      <path stroke-width="3" stroke-miterlimit="10" d="M4.92 2.514L21.964 19.56">
+      </path>
+    </svg>
+    <!-- semi circle -->
+    <svg id="semi-circle" xmlns="http://www.w3.org/2000/svg" width="29" viewbox="0 0 29 15">
+      <path stroke-width="3" stroke-miterlimit="10"
+        d="M1.5 14.546C1.5 7.34 7.34 1.5 14.547 1.5c7.205 0 13.046 5.84 13.046 13.046">
+      </path>
+    </svg>
+    <!-- spring -->
+    <svg id="spring" xmlns="http://www.w3.org/2000/svg" width="17" viewbox="0 0 17 36">
+      <path stroke-width="3" stroke-miterlimit="10"
+        d="M9.945 34.614S1.46 31.38 1.5 23.92s11.73-4.797 11.73-4.797S3.82 16.708 4.18 8.77s12.784-7.255 12.784-7.255">
+      </path>
+    </svg>
+    <!-- triangle -->
+    <svg id="triangle" xmlns="http://www.w3.org/2000/svg" width="26" viewbox="0 0 26 23">
+      <path stroke-width="3" stroke-miterlimit="10" d="M12.837 3l5.12 8.868 5.12 8.868H2.597l5.12-8.868z">
+      </path>
+    </svg>
+
+    <div id="p1">
+      <svg data-depth="20" width="26px" height="23px">
+        <use xlink:href="#line" class="aqua" style="transform: rotate(65deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <div id="p2">
+      <svg data-depth="20" width="29px" height="15px">
+        <use xlink:href="#semi-circle" class="aqua" style="transform: rotate(180deg); transform-origin: center center;">
+        </use>
+      </svg>
+    </div>
+
+    <div id="p3">
+      <svg data-depth="20" width="50px" height="50px">
+        <use xlink:href="#spring" class="pink" style="transform: rotate(50deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <div id="p4">
+      <svg data-depth="20" width="26px" height="23px"">
+          <use xlink:href=" #triangle" class="yellow"
+        style="transform: rotate(90deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <div id="p5">
+      <svg data-depth="20" width="26px" height="23px">
+        <use xlink:href="#triangle" class="pink" style="transform: rotate(0deg); transform-origin: center center;">
+        </use>
+      </svg>
+    </div>
+
+    <div id="p6">
+      <svg data-depth="20" width="69px" height="42px">
+        <use xlink:href="#triangle" class="aqua" style="transform: rotate(30deg); transform-origin: center center;">
+        </use>
+      </svg>
+    </div>
+
+    <div id="p7">
+      <svg data-depth="20" width="29px" height="32px">
+        <use xlink:href="#semi-circle" class="aqua" style="transform: rotate(50deg); transform-origin: center center;">
+        </use>
+      </svg>
+    </div>
+
+    <div id="p8">
+      <svg data-depth="20" width="29px" height="15px">
+        <use xlink:href="#semi-circle" class="yellow" style="transform: rotate(0deg); transform-origin: center center;">
+        </use>
+      </svg>
+    </div>
+
+    <div id="p9">
+      <svg data-depth="20" width="26px" height="23px">
+        <use xlink:href="#line" class="yellow" style="transform: rotate(85deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <div id="p10">
+      <svg data-depth="20" width="17px" height="36px">
+        <use xlink:href="#spring" class="pink" style="transform: rotate(0deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <div id="p11">
+      <svg data-depth="20" width="26px" height="23px">
+        <use xlink:href="#line" class="aqua" style="transform: rotate(0deg); transform-origin: center center;"></use>
+      </svg>
+    </div>
+
+    <ul class="social-vertical-stripe d-none d-md-block">
+      <li class="social-vertical-stripe__item">
+        <a href="https://twitter.com/0VXk4Zvq55pSli9" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-vertical-stripe__item">
+        <a href="https://vk.com/id432343304" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-vertical-stripe__item">
+        <a href="https://github.com/paveltopsky" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>        
+      </li>
+      <li class="social-vertical-stripe__item">
+        <a href="https://codepen.io/nikitavakula" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="m255.807 87.087c-.059-.31-.11-.62-.193-.924-.052-.183-.114-.355-.172-.535a11.007 11.007 0 0 0 -.283-.8c-.076-.182-.162-.358-.245-.534a9.74 9.74 0 0 0 -.376-.73c-.096-.176-.207-.342-.313-.51a11.038 11.038 0 0 0 -.842-1.142 11.166 11.166 0 0 0 -.544-.596c-.145-.145-.29-.29-.442-.431a9.07 9.07 0 0 0 -.624-.52c-.165-.128-.327-.26-.5-.377-.061-.044-.117-.096-.182-.138l-116.992-78a10.989 10.989 0 0 0 -12.201 0l-117 77.998c-.065.041-.116.093-.182.138-.172.12-.334.248-.5.376a15.52 15.52 0 0 0 -.624.517 8.604 8.604 0 0 0 -.438.43c-.193.194-.372.39-.548.597-.13.155-.255.31-.376.483-.165.217-.317.438-.465.669-.107.169-.214.334-.314.51a9.593 9.593 0 0 0 -.372.724c-.083.176-.172.355-.245.534-.107.262-.2.531-.286.8-.058.18-.12.355-.169.517-.08.303-.138.61-.193.924-.03.159-.069.314-.09.476-.062.475-.096.951-.096 1.437v78.016c0 .482.034.965.103 1.437.025.173.07.31.104.476.055.31.103.62.207.931.048.172.103.345.172.534.086.276.172.552.276.804.072.172.172.344.241.517.114.241.242.482.38.734.096.172.206.345.31.503.148.242.31.449.482.655.121.173.242.31.38.476.175.207.344.414.551.597.141.137.276.31.448.413.2.173.414.345.62.524.166.138.346.242.483.376.066.034.104.103.173.134l116.968 78.04a10.815 10.815 0 0 0 6.102 1.851 11.06 11.06 0 0 0 6.102-1.85l117-78c.065-.04.12-.089.182-.134.172-.12.334-.248.5-.375.214-.17.424-.345.624-.524.151-.135.296-.283.441-.428a9.876 9.876 0 0 0 .92-1.072c.166-.217.318-.441.466-.669.107-.165.214-.334.314-.503.138-.242.258-.486.375-.734.083-.176.17-.352.245-.531.107-.266.197-.535.283-.804.058-.179.12-.355.172-.534.08-.303.135-.614.193-.924.028-.159.07-.314.086-.476.063-.475.097-.951.097-1.437v-78.003c0-.486-.038-.962-.097-1.438-.027-.169-.079-.306-.113-.475zm-127.81 66.935-38.905-26.021 38.905-26.025 38.907 26.025zm-10.998-71.155-47.692 31.9-38.497-25.754 86.19-57.458v51.312zm-67.477 45.13-27.517 18.406v-36.811zm19.785 13.245 47.693 31.896v51.312l-86.19-57.465 38.498-25.75v.007zm69.69 31.89 47.692-31.896 38.501 25.749-86.193 57.458v-51.312zm67.477-45.128 27.521-18.409v36.815l-27.52-18.413v.007zm-19.785-13.238-47.692-31.896v-51.315l86.193 57.459-38.5 25.752z" />
+          </svg>
+        </a>
+      </li>
+      <li class="social-vertical-stripe__item">
+        <a href="https://dribbble.com/Bambaleylo" target="_blank">
+          <svg fill="#b0b2c3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="social-svg">
+            <path class="social-path"
+              d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <!-- /.social-vertical-stripe -->
+
+  </header>
+  <!-- /.header -->
+
+  <main id="main" class="main">
+
+    <div class="block-subtitle first">
+      САЙТЫ
+    </div>
+    <div class="block-title first">
+      Последние Работы
+    </div>
+
+    <div class="main-content">
+
+      <!-- <a href="portfolio/aq/index.html" class="main__item main-item--right-shift" style="background: url(img/main/1.jpg); background-position: 50% 50% !important;">
+        <div class="main__item__mask"></div>
+        <div class="main__item-number main__item-number--right-shift">
+          <div class="main__item__mask-back">01</div>
+          <div class="main__item__mask-front">
+            <div data-index="01" class="main__item__mask-overlay">01</div>
+          </div>
+        </div>
+        <div class="main__item-info main__item-info--left-shift d-flex flex-column align-items-start">
+          <div class="main__item-title">
+            Absolut Quartz
+          </div>
+          <div class="main__item-subtitle">
+            <i>Столешницы из кварцевого алгломерата.</i>
+          </div>
+          <button class="button">
+            <span class="button__text">
+              Перейти
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+              <path fill="#FFF"
+                d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </a> -->
+
+      <a href="https://www.icemlaw.com" class="main__item main-item--right-shift first" style="background: url(img/main/11.png); background-position: 50% 50% !important;">
+        <div class="main__item__mask"></div>
+        <div class="main__item-number main__item-number--right-shift">
+          <div class="main__item__mask-back">01</div>
+          <div class="main__item__mask-front">
+            <div data-index="01" class="main__item__mask-overlay">01</div>
+          </div>
+        </div>
+        <div class="main__item-info main__item-info--left-shift d-flex flex-column align-items-start">
+          <div class="main__item-title">
+            ICEMLAW
+          </div>
+          <div class="main__item-subtitle">
+            <i>Иммиграционный центр Екатерины Муратовой.</i>
+          </div>
+          <button class="button">
+            <span class="button__text">
+              Перейти
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+              <path fill="#FFF"
+                d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+      <a href="http://www.cieldeparis.com" class="main__item main-item--left-shift second" style="background: url(img/main/22.jpg); background-position: 50% 0% !important;">
+        <div class="main__item__mask"></div>
+        <div class="main__item-number main__item-number--left-shift">
+          <div class="main__item__mask-back">02</div>
+          <div class="main__item__mask-front">
+            <div data-index="02" class="main__item__mask-overlay">02</div>
+          </div>
+        </div>
+        <div class="main__item-info main__item-info--right-shift d-flex flex-column align-items-end">
+          <div class="main__item-title">
+            Ciel De Paris
+          </div>
+          <div class="main__item-subtitle">
+            <i>Мой опыт работы с зарубежным бизнесом.</i>
+          </div>
+          <button class="button">
+            <span class="button__text">
+              Перейти
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+              <path fill="#FFF"
+                d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+      <a href="portfolio/wifibox/index.html" class="main__item main-item--right-shift third" style="background: url(img/main/33.png); background-position: 50% 50% !important;">
+        <div class="main__item__mask"></div>
+        <div class="main__item-number main__item-number--right-shift">
+          <div class="main__item__mask-back">03</div>
+          <div class="main__item__mask-front">
+            <div data-index="03" class="main__item__mask-overlay">03</div>
+          </div>
+        </div>
+        <div class="main__item-info main__item-info--left-shift d-flex flex-column align-items-start">
+          <div class="main__item-title">
+            WIFIBOX.
+          </div>
+          <div class="main__item-subtitle">
+            <i>Оборудование для повышения эффективности рекламы.</i>
+          </div>
+          <button class="button">
+            <span class="button__text">
+              Перейти
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+              <path fill="#FFF"
+                d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+      <a href="portfolio/bakaleya/index.html" class="main__item main-item--left-shift fourth" style="background: url(img/main/4.jpg);">
+        <div class="main__item__mask"></div>
+        <div class="main__item-number main__item-number--left-shift">
+          <div class="main__item__mask-back">04</div>
+          <div class="main__item__mask-front">
+            <div data-index="04" class="main__item__mask-overlay">04</div>
+          </div>
+        </div>
+        <div class="main__item-info main__item-info--right-shift d-flex flex-column align-items-end">
+          <div class="main__item-title">
+            Good Sign Company
+          </div>
+          <div class="main__item-subtitle">
+            <i>Компания, родом из Индии.</i>
+          </div>
+          <button class="button">
+            <span class="button__text">
+              Перейти
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 476.213 476.213">
+              <path fill="#FFF"
+                d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <section id="exp" class="exp">
+
+    <div class="block-subtitle second">
+      ЭКСПЕРИМЕНТЫ
+    </div>
+    <div class="block-title second" style="font-family: League Spartan, Arial, sans-serif;">
+      Web is fun.
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <a href="https://codepen.io/LiliyaV/pen/gOGyGOa" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+
+          <div class="exp__item__mask"></div>
+
+          <div class="exp__item-img">
+            <div class="exp__item-circle" style="background: url(img/exp/1.jpg);"></div>
+          </div>
+
+          <div class="exp__item-info">
+            <div class="exp__item-title">
+              НАЗВАНИЕ
+            </div>
+            <div class="exp__item-subtitle">
+              CSS3 spin preloader + preload Page
+            </div>
+            <div class="exp__item-num exp__item-num--first"></div>
+          </div>
+
+        </a>
+
+        <a href="https://codepen.io/LiliyaV/pen/dyVLzxE" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+
+          <div class="exp__item__mask"></div>
+
+          <div class="exp__item-img">
+            <div class="exp__item-circle" style="background: url(img/exp/2.jpg);"></div>
+          </div>
+
+          <div class="exp__item-info">
+            <div class="exp__item-title">
+              НАЗВАНИЕ
+            </div>
+            <div class="exp__item-subtitle">
+              CSS Checkboxes
+            </div>
+            <div class="exp__item-num exp__item-num--second"></div>
+          </div>
+
+        </a>
+
+        <a href="https://codepen.io/LiliyaV/pen/QWqPqWv" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+
+          <div class="exp__item__mask"></div>
+
+          <div class="exp__item-img">
+            <div class="exp__item-circle" style="background: url(img/exp/3.jpg);"></div>
+          </div>
+
+          <div class="exp__item-info">
+            <div class="exp__item-title">
+              НАЗВАНИЕ
+            </div>
+            <div class="exp__item-subtitle">
+              Split text with clip-path
+            </div>
+            <div class="exp__item-num exp__item-num--third"></div>
+          </div>
+
+        </a>
+
+        <a href="https://codepen.io/LiliyaV/pen/abLxLbR" class="col-12 col-sm-6 col-lg-3 exp__item" target="_blank">
+
+          <div class="exp__item__mask"></div>
+
+          <div class="exp__item-img">
+            <div class="exp__item-circle" style="background: url(img/exp/4.jpg);"></div>
+          </div>
+
+          <div class="exp__item-info">
+            <div class="exp__item-title">
+              НАЗВАНИЕ
+            </div>
+            <div class="exp__item-subtitle">
+              Open & Close Menu Animation
+            </div>
+            <div class="exp__item-num exp__item-num--fourth"></div>
+          </div>
+
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer__logo">
+      <a href="index.html" class="logo-letter">
+        V
+      </a>
+    </div>
+
+    <div class="footer__list d-flex justify-content-center flex-wrap">
+      <a href="https://twitter.com/0VXk4Zvq55pSli9">Twitter</a>
+      <a href="https://github.com/paveltopsky">GitHub</a>
+      <a href="https://vk.com/id432343304">VK</a>
+      <a href="https://codepen.io/nikitavakula">Codepen</a>
+    </div>
+
+    <div class="footer__copy">
+      <div class="mb-2">© 2020 Liliya Vakula - Handmade with love ❤</div>
+      last update 17.02.2021<br><br>
+    </div>
+
+  </footer>
+
+  <script>
+    // Отправка данных на сервер
+    function send(event, php){
+    console.log("Отправка запроса");
+    event.preventDefault ? event.preventDefault() : event.returnValue = false;
+    var req = new XMLHttpRequest();
+    req.open('POST', php, true);
+    req.onload = function() {
+      if (req.status >= 200 && req.status < 400) {
+      json = JSON.parse(this.response); // Ебанный internet explorer 11
+          console.log(json);
+            
+          // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+          if (json.result == "success") {
+            // Если сообщение отправлено
+            // alert("Сообщение отправлено");
+          } else {
+            // Если произошла ошибка
+            // alert("Ошибка. Сообщение не отправлено");
+          }
+        // Если не удалось связаться с php файлом
+        } else {
+          // alert("Ошибка сервера. Номер: "+req.status);
+          }
+        }; 
+    
+    // Если не удалось отправить запрос. Стоит блок на хостинге
+    req.onerror = function() {alert("Ошибка отправки запроса");};
+    req.send(new FormData(event.target));
+
+    // hide modal1, open modal3 with timeout
+    // $('#modal1').modal('hide');
+    // $('#modal2').modal('hide');
+    // setTimeout(() => $('#modal3').modal('show'), 200);
+
+    }
+  </script>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Parallax.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/main.js"></script>
+  <script src="js/parallax.js"></script>
+
+</body>
+
+</html>

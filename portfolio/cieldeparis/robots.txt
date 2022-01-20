@@ -1,0 +1,14 @@
+User-agent: *
+# Directories
+Disallow: /backend/
+Disallow: /cache/
+Disallow: /includes/
+Disallow: /locales/
+Disallow: /modules/
+Disallow: /public/
+Disallow: /themes/
+Disallow: /__backup/
+
+# Sitemap
+Sitemap: http://www.cieldeparis.com/sitemap_fr.xml
+#Sitemap: http://www.cieldeparis.com/sitemap_en.xml

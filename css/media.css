@@ -1,0 +1,289 @@
+body {
+
+}
+
+/* HEADER
+==================================================*/
+
+@media screen and (max-width: 1200px) {
+  .header__content-wrap {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__content-title {
+    margin-bottom: 15px;
+  }
+
+  .header__content-subtitle {
+    margin-bottom: 25px;
+  }
+
+  .header__content-wrap {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__content-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header__content-title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__content-wrap {
+    padding-left: 30px;
+  }
+}
+
+/* CONTACT MODAL */
+
+@media screen and (max-width: 1200px) {
+  .contact__modal {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact__modal {
+    width: 95%;
+  }
+
+  .header__close--contact {
+    right: 50px;
+    top: 100px;
+  }
+
+  .contact__modal__svg-item {
+    width: 55px;
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .contact__modal {
+    height: 90%;
+  }
+  
+  .contact__modal-block {
+    height: 100%;
+  }
+
+  .contact__modal__content {
+    top: 18%;
+  }
+
+  .header__close--contact {
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contact__modal {
+    /* display: block; */
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .contact__modal-block {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .contact__modal-block-wrap {
+    display: block;
+    height: 100%; overflow: auto;
+    flex-direction: column;
+  }
+
+  .contact__modal__content {
+    position: static;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    transform: translateX(0);
+    padding: 40px 0;
+  }
+
+  /* .contact__modal__content {
+    transform: translateX(-50%);
+    width: 70%;
+  } */
+
+  .header__close--contact {
+    right: 30px;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .contact__modal {
+    width: 100%;
+  }
+
+  .contact__modal-block.left {
+    height: 590px;
+  }
+
+  .contact__modal-block.right {
+    height: 520px;
+  }
+
+  .header__close--contact {
+    width: 30px;
+  }
+
+  .contact__modal__svg-item {
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  .header__close--contact {
+    top: 35px;
+  }
+}
+
+
+/* MAIN
+==================================================*/
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .block-title {
+    font-size: 1.5em;
+    /* margin-bottom: 70px; */
+  }
+
+  .main-content {
+    width: 76%;
+  }
+
+  .main__item {
+    width: 100%;
+  }
+
+  .main-item--right-shift {
+    transform: translateX(0px);
+  }
+  
+  .main-item--left-shift {
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .block-title {
+    font-size: 1.5em;
+    /* margin-bottom: 70px; */
+  }
+
+  .main-content {
+    width: 86%;
+  }
+
+  .main__item {
+    width: 100%;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main__item-title {
+    font-size: 1.9em;
+  }
+
+  .main__item-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .main__item {
+    width: 100%;
+    height: 340px;
+  }
+
+  .main__item-title {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+  }
+
+  .main__item-subtitle {
+    font-size: 0.95em;
+    margin-bottom: 18px;
+  }
+
+  .main__item-info--left-shift {
+    left: 45px;
+    bottom: 60px;
+  }
+  
+  .main__item-info--right-shift {
+    text-align: right;
+    right: 45px;
+    bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main__item {
+    width: 100%;
+    height: 290px;
+  }
+}
+
+/* EXP
+==================================================*/
+
+@media screen and (max-width: 1150px) {
+  .exp__item-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .exp__item-circle {
+    margin-bottom: 40px;
+  }
+}
+
+/* FOOTER
+==================================================*/
+
+@media screen and (max-width: 550px) {
+  .exp__item-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .exp__item-circle {
+    margin-bottom: 40px;
+  }
+
+  .footer__list a {
+    text-align: center;
+    width: 50%;
+    margin: 0 !important;
+    padding: 15px 0;
+  }
+
+  .footer__list {
+    margin-bottom: 10px;
+  }
+
+  .footer__copy {
+    margin-bottom: 10px;
+  }
+}
