@@ -1,0 +1,9 @@
+базовый шаблон для вёрстки
+
+пустной html
+
+scss stylelint
+
+библиотеки
+jquery
+bootstrap 5
