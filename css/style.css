@@ -449,7 +449,7 @@ button:focus {
 
 .header__mobile-social-nav {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
   left: 10%;
   width: 80%;
   margin-left: 20px;
@@ -465,12 +465,12 @@ button:focus {
 
 @keyframes openHeaderSocial {
   0% {
-    bottom: 10%;
+    bottom: 15%;
     opacity: 0;
   }
 
   100% {
-    bottom: 15%;
+    bottom: 20%;
     opacity: 1;
   }
 }
